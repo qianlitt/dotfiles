@@ -1,6 +1,13 @@
-# Ignore all everything by default
-*
+/*
+
 !.gitignore
 
-# Whitelist specific files and directories
+# documents
 !README.md
+!/docs
+
+# kitty
+!/kitty
+/kitty/*
+!/kitty/kitty.conf
+!/kitty/current-theme.conf
