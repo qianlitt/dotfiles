@@ -10,4 +10,5 @@
 !/kitty
 /kitty/*
 !/kitty/kitty.conf
+!/kitty/kitty.default.conf
 !/kitty/current-theme.conf
