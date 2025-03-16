@@ -22,3 +22,4 @@
 !/fish/conf.d
 /fish/conf.d/*
 !/fish/conf.d/abbrs.fish
+!/fish/conf.d/env.fish
