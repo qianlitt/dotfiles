@@ -12,3 +12,9 @@
 !/kitty/kitty.conf
 !/kitty/kitty.default.conf
 !/kitty/current-theme.conf
+
+# fish
+!/fish
+/fish/*
+!/fish/config.fish
+!/fish/fish_plugins
