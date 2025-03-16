@@ -18,3 +18,7 @@
 /fish/*
 !/fish/config.fish
 !/fish/fish_plugins
+# fish/conf.d
+!/fish/conf.d
+/fish/conf.d/*
+!/fish/conf.d/abbrs.fish
