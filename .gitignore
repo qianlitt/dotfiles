@@ -12,3 +12,17 @@
 !/kitty/kitty.conf
 !/kitty/kitty.default.conf
 !/kitty/current-theme.conf
+
+# fish
+!/fish
+/fish/*
+!/fish/config.fish
+!/fish/fish_plugins
+# fish/conf.d
+!/fish/conf.d
+/fish/conf.d/*
+!/fish/conf.d/abbrs.fish
+!/fish/conf.d/env.fish
+!/fish/conf.d/auto-Hypr.fish
+!/fish/conf.d/prompt.fish
+!/fish/conf.d/rustup.fish
