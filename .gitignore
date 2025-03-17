@@ -25,3 +25,4 @@
 !/fish/conf.d/env.fish
 !/fish/conf.d/auto-Hypr.fish
 !/fish/conf.d/prompt.fish
+!/fish/conf.d/rustup.fish
