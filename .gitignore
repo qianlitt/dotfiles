@@ -26,6 +26,10 @@
 !/fish/conf.d/auto-Hypr.fish
 !/fish/conf.d/prompt.fish
 !/fish/conf.d/rustup.fish
+# fish/functions
+!/fish/functions
+/fish/functions/*
+!/fish/functions/prompt_set_color.fish
 # fish/prompts
 !/fish/prompts
 /fish/prompts/*
