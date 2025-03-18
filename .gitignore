@@ -31,6 +31,7 @@
 /fish/functions/*
 !/fish/functions/prompt_set_color.fish
 !/fish/functions/prompt_check_env.fish
+!/fish/functions/prompt
 # fish/prompts
 !/fish/prompts
 /fish/prompts/*
