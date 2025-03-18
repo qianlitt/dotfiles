@@ -32,7 +32,8 @@
 !/fish/functions/prompt_set_color.fish
 !/fish/functions/prompt_check_env.fish
 !/fish/functions/prompt
-# fish/prompts
-!/fish/prompts
-/fish/prompts/*
-!/fish/prompts/save_fish_default_prompt.fish
+
+# script
+!/script
+/script/fish-prompts/*/*
+/script/fish-prompts/*.txt
