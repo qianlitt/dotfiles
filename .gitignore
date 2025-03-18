@@ -26,3 +26,14 @@
 !/fish/conf.d/auto-Hypr.fish
 !/fish/conf.d/prompt.fish
 !/fish/conf.d/rustup.fish
+# fish/functions
+!/fish/functions
+/fish/functions/*
+!/fish/functions/prompt_set_color.fish
+!/fish/functions/prompt_check_env.fish
+!/fish/functions/prompt
+
+# script
+!/script
+/script/fish-prompts/*/*
+/script/fish-prompts/*.txt
