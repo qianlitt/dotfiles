@@ -9,10 +9,14 @@ set prompt_list_path (string join '/' -- $script_dir $prompt_list_file)
 
 # Path which fish save prompt
 set prompt_dir (string join '/' -- $__fish_config_dir "functions")
-set prompt_left_file "fish_prompt.fish"
-set prompt_left_path (string join '/' -- $prompt_dir $prompt_left_file)
-set prompt_right_file "fish_right_prompt.fish"
-set prompt_right_path (string join '/' -- $prompt_dir $prompt_right_file)
+
+set prompt_path
+set pattern "fish_(right_)?prompt\.fish\$"
+for file in $prompt_dir/*
+    if string match -rq $pattern $file
+        set -a prompt_path $file
+    end
+end
 
 function is_file \
     --description "if argv[1] is a file, then return 1, otherwise return 0."
@@ -69,27 +73,15 @@ function save_prompt
         yes y | fish_config prompt save $prompt
 
         # Copy fish prompt to sub-diretory
-        is_file $argv[2] # check fish_prompt.fish
-        if test $status -eq 1
-            cp -v $argv[2] $prompt_subdir
-        else
-            printf "%sError: %s\"%s\"%s isn't exist.%s\n" \
-                (set_color $fish_color_error) (set_color grey) argv[2] (set_color $fish_color_error) (set_color normal)
-        end
-
-        is_file $argv[3] # check fish_right_prompt.fish
-        if test $status -eq 1
-            cp -v $argv[3] $prompt_subdir
-        else
-            printf "%sError: %s\"%s\"%s isn't exist.%s\n" \
-                (set_color $fish_color_error) (set_color grey) argv[3] (set_color $fish_color_error) (set_color normal)
+        for file in $prompt_path
+            cp -v $file $prompt_subdir
         end
     end
 end
 
 function main
     save_prompt_list $prompt_list_path
-    save_prompt $prompt_list_path $prompt_left_path $prompt_right_path
+    save_prompt $prompt_list_path
 end
 
 main
