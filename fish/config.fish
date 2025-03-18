@@ -4,8 +4,6 @@ end
 
 set env_type (prompt_check_env)
 switch $env_type
-    case ssh
-        prompt_set_color
     case kitty
         starship init fish | source
         prompt_set_color
