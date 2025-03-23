@@ -38,3 +38,14 @@ fisher update
 ```
 
 运行以上命令即可安装 `patrickf1/fzf.fish` 和 `jhillyerd/plugin-git` 插件，同时删除不在该文件中的插件。
+
+## Prompt 设置
+
+运行 `fish/functions/prompt` 目录下的 `prompt-init.fish`，可自动将我写的 prompt 复制到 `functions` 目录:
+
+```shell
+./prompt-init.fish
+```
+
+> [!NOTE]
+> 可在不同的平台环境上展现不同的 prompt 效果。
