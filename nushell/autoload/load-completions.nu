@@ -33,19 +33,6 @@ const COMPLETIONS = {
 }
 
 use $COMPLETIONS.ack *
-use $COMPLETIONS.bat *
-use $COMPLETIONS.cargo *
-use $COMPLETIONS.curl *
-use $COMPLETIONS.docker *
-use $COMPLETIONS.git *
 use $COMPLETIONS.less *
-use $COMPLETIONS.make *
-use $COMPLETIONS.man *
-use $COMPLETIONS.npm *
-use $COMPLETIONS.pnpm *
-use $COMPLETIONS.rg *
-use $COMPLETIONS.rustup *
-use $COMPLETIONS.ssh *
-use $COMPLETIONS.tar *
 use $COMPLETIONS.tcpdump *
 use $COMPLETIONS.uv *
