@@ -12,3 +12,7 @@ abbr -a -- yz yazi
 # cargo
 abbr -a cgs "cargo search --registry crates-io"
 abbr -a cgi "cargo info --registry crates-io"
+
+# git
+abbr -a -- glss "git log --show-signature"
+abbr -a -- glsp "git log --pretty=\"%h %G? %aN %s\""
