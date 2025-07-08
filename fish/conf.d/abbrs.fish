@@ -1,6 +1,16 @@
 # Abbreviations
 
-abbr -a -- la "ll -a"
+# ls
+if command -q eza
+    abbr -a -- ll "eza -al"
+    abbr -a -- la "eza -A"
+    abbr -a -- lf "eza -alf"
+    abbr -a -- ldir "eza -alD"
+    abbr -a -- lt "eza -T"
+else
+    abbr -a -- la "ll -A"
+end
+
 abbr -a -- ip "ip -c"
 abbr -a -- df "df -h"
 
