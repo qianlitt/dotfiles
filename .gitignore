@@ -1,0 +1,41 @@
+/*
+
+!.gitignore
+
+# documents
+!README.md
+!/docs
+
+# kitty
+!/kitty
+/kitty/*
+!/kitty/kitty.conf
+!/kitty/kitty.default.conf
+!/kitty/current-theme.conf
+
+# fish
+!/fish
+/fish/*
+!/fish/config.fish
+!/fish/fish_plugins
+# fish/conf.d
+!/fish/conf.d
+/fish/conf.d/*
+!/fish/conf.d/abbrs.fish
+!/fish/conf.d/env.fish
+!/fish/conf.d/auto-Hypr.fish
+!/fish/conf.d/prompt.fish
+!/fish/conf.d/rustup.fish
+!/fish/conf.d/ghcup.fish
+# fish/functions
+!/fish/functions
+/fish/functions/*
+!/fish/functions/prompt_set_color.fish
+!/fish/functions/prompt_check_env.fish
+!/fish/functions/prompt
+
+# script
+!/script
+/script/fish-prompts/*/*
+/script/fish-prompts/*.txt
+/script/fish-regex/*.txt
