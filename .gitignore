@@ -31,7 +31,11 @@
 !/fish/functions/check_env.fish
 !/fish/functions/print_greeting.fish
 !/fish/functions/set_terminal_color.fish
-!/fish/functions/prompt
+# fish/prompt
+!/fish/prompt
+/fish/prompt/*
+!/fish/prompt/gen_fish_prompt.fish
+!/fish/prompt/clean_fish_prompt.fish
 
 # script
 !/script

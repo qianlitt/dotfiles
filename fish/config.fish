@@ -22,5 +22,7 @@ if status is-interactive
             set_terminal_color
         case tty
             print_greeting
+            set -l theme default
+            source (path dirname (status filename))/prompt/"$theme"/fish_prompt.fish
     end
 end
