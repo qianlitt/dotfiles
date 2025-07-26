@@ -12,6 +12,7 @@ if status is-interactive
             set ZELLIJ_AUTO_EXIT true
             eval (zellij setup --generate-auto-start fish | string collect)
         case zellij
+            print_greeting
             starship init fish | source
         case kitty
             starship init fish | source
@@ -19,5 +20,7 @@ if status is-interactive
         case foot
             starship init fish | source
             set_terminal_color
+        case tty
+            print_greeting
     end
 end
