@@ -49,6 +49,7 @@ end
 
 abbr -a -- ip "ip -c"
 abbr -a -- df "df -h"
+abbr -a -- fish_reload "exec fish"
 
 abbr -a -- nv nvim
 abbr -a -- nvc "nvim --clean"
