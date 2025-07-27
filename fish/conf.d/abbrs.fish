@@ -2,8 +2,10 @@
 
 # ls
 if command -q eza
-    abbr -a -- ll "eza -al"
+    abbr -a -- ls eza
+    abbr -a -- ll "eza -l"
     abbr -a -- la "eza -A"
+    abbr -a -- lla "eza -lA"
     abbr -a -- lf "eza -alf"
     abbr -a -- ldir "eza -alD"
     abbr -a -- lt "eza -T"
@@ -38,10 +40,10 @@ function ex -a file
             case "*.7z"
                 7z x $file
             case "*"
-                set_color red; echo "'$file' cannot be extracted via ex()"
+                echo "$(set_color red)'$file' cannot be extracted via ex()"
         end
     else
-        set_color red; echo "'$file' is not a valid file"
+        echo "$(set_color red)'$file' is not a valid file"
     end
 end
 
