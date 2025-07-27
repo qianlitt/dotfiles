@@ -1,4 +1,4 @@
-function prompt_check_env -d "Check current environment"
+function check_env -d "Check current environment"
     if set -q ZELLIJ
         printf zellij
     else if set -q TERM_PROGRAM && test "$TERM_PROGRAM" = vscode

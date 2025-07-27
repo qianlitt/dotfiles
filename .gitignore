@@ -24,15 +24,18 @@
 !/fish/conf.d/abbrs.fish
 !/fish/conf.d/auto-Hypr.fish
 !/fish/conf.d/env.fish
-!/fish/conf.d/ghcup.fish
 !/fish/conf.d/gpg.fish
-!/fish/conf.d/rustup.fish
 # fish/functions
 !/fish/functions
 /fish/functions/*
-!/fish/functions/prompt_set_color.fish
-!/fish/functions/prompt_check_env.fish
-!/fish/functions/prompt
+!/fish/functions/check_env.fish
+!/fish/functions/print_greeting.fish
+!/fish/functions/set_terminal_color.fish
+# fish/prompt
+!/fish/prompt
+/fish/prompt/*
+!/fish/prompt/gen_fish_prompt.fish
+!/fish/prompt/clean_fish_prompt.fish
 
 # script
 !/script

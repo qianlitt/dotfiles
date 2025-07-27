@@ -1,13 +1,28 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-end
 
-set env_type (prompt_check_env)
-switch $env_type
-    case kitty
-        starship init fish | source
-        prompt_set_color
-    case foot
-        starship init fish | source
-        prompt_set_color
+    # prompt settings
+    set env_type (check_env)
+    switch $env_type
+        case vscode
+            starship init fish | source
+        case ssh
+            # Start Zellij
+            set ZELLIJ_AUTO_ATTACH true
+            set ZELLIJ_AUTO_EXIT true
+            eval (zellij setup --generate-auto-start fish | string collect)
+        case zellij
+            print_greeting
+            starship init fish | source
+        case kitty
+            starship init fish | source
+            set_terminal_color
+        case foot
+            starship init fish | source
+            set_terminal_color
+        case tty
+            print_greeting
+            set -l theme default
+            source (path dirname (status filename))/prompt/"$theme"/fish_prompt.fish
+    end
 end

@@ -1,7 +1,7 @@
 #!/usr/bin/fish
 # Clean file and directory which `save_fish_default_prompt.fish` generated.
 
-set script_dir (path dirname (status filename))
+set script_dir (dirname (status --current-filename))
 set list_file "fish_default_prompt_list.txt"
 set list_path (string join '/' -- $script_dir $list_file)
 
@@ -16,7 +16,7 @@ printf "--- %sdelete start%s ---\n" \
     (set_color $fish_color_error) (set_color normal)
 
 for target in (awk '{print $1}' $list_path)
-    rm -rv $target
+    rm -rv (string join '/' -- $script_dir $target)
 end
 
 printf "--- %sdelete   end%s ---\n" \
