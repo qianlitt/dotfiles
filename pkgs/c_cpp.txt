@@ -1,0 +1,24 @@
+clang
+llvm
+lldb
+
+gcc
+gdb
+
+make
+cmake
+xmake
+ninja
+meson
+
+# tools
+lcov
+cppcheck
+doxygen
+gtest
+perf
+valgrind
+
+# lib
+libc++
+boost

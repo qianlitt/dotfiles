@@ -42,3 +42,6 @@
 /script/fish-prompts/*/*
 /script/fish-prompts/*.txt
 /script/fish-regex/*.txt
+
+# packages
+!/pkgs/
